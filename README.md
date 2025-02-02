@@ -23,15 +23,15 @@ Para la autenticación de usuarios, utiliza los siguientes endpoints:
 
 - `api/v1/users/`: Obtiene la información del usuario que ha iniciado sesión. Métodos disponibles: GET. Auth: Bearer JWT
 
-- `api/v1/login/`: Inicia sesión de usuario. Métodos disponibles: POST. Body: email: string, password: string 
+- `api/v1/users/login/`: Inicia sesión de usuario. Métodos disponibles: POST. Body: email: string, password: string 
 
-- `api/v1/register/`: Registra nuevos usuarios. Métodos disponibles: POST. Body: name: string, username: string, email: string, password: string
+- `api/v1/users/register/`: Registra nuevos usuarios. Métodos disponibles: POST. Body: name: string, username: string, email: string, password: string
 
-- `api/v1/token/refresh/` Refresca el token de acceso. Métodos disponibles: POST. Body: refresh: string
+- `api/v1/users/token/refresh/` Refresca el token de acceso. Métodos disponibles: POST. Body: refresh: string
 
-- `api/v1/logout/` Cierra sesión del usuario. Métodos disponibles: POST. Auth: Bearer JWT 
+- `api/v1/users/logout/` Cierra sesión del usuario. Métodos disponibles: POST. Auth: Bearer JWT 
 
-- `api/v1/edit/` Actualiza los datos del usuario. Métodos disponibles: PATCH. Auth: Bearer JWT. Body: name: string, username: string, email: string, password: string
+- `api/v1/users/edit/` Actualiza los datos del usuario. Métodos disponibles: PATCH. Auth: Bearer JWT. Body: name: string, username: string, email: string, password: string
 
 ### Trivia 🎢
 Para la gestión de la trivia, se utiliza los siguientes endpoints:
